@@ -8,7 +8,7 @@
 import SwiftUI
 
 struct AppStartingView: View {
-    @StateObject var viewModell = AppStartingViewModel()
+    @StateObject private var viewModell = AppStartingViewModel()
 
     var body: some View {
         Group {
