@@ -26,7 +26,7 @@ private extension HomeTabView {
             Text("Income")
         }
     }
-    
+
     var settingsTabItemView: some View {
         NavigationStack {
             IncomeView()
