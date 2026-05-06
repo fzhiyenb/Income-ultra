@@ -8,13 +8,14 @@
 import Foundation
 
 struct SalaryOutput {
-    let hourlyRate: Double
-    let takenDays: Pay
+    let hourlyWage: Double
+    let takeHomePay: Pay
     let grossPay: Pay
 
-    init(hourlyRate: Double = 0.0, takenDays: Pay = .init(incomeType: .takeHome), grossPay: Pay = .init(incomeType: .gross)) {
-        self.hourlyRate = hourlyRate
-        self.takenDays = takenDays
+    init(hourlyWage: Double = 0.0, takeHomePay: Pay = .init(incomeType: .takeHome), grossPay: Pay = .init(incomeType: .gross)) {
+        self.hourlyWage = hourlyWage
+        self.takeHomePay = takeHomePay
         self.grossPay = grossPay
     }
 }
+
