@@ -12,7 +12,7 @@ struct SalaryOutput {
     let takenDays: Pay
     let grossPay: Pay
 
-    init(hourlyRate: Double = 0.0, takenDays: Pay = .init(inconeType: .takeHome), grossPay: Pay = .init(inconeType: .gross)) {
+    init(hourlyRate: Double = 0.0, takenDays: Pay = .init(incomeType: .takeHome), grossPay: Pay = .init(incomeType: .gross)) {
         self.hourlyRate = hourlyRate
         self.takenDays = takenDays
         self.grossPay = grossPay

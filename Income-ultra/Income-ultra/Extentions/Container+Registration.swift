@@ -13,7 +13,7 @@ extension Container {
         self { MainActor.assumeIsolated { AppInfoLiveStore() }}.singleton
     }
 
-    var incomStore: Factory<IncomeStore> {
+    var incomeStore: Factory<IncomeStore> {
         self { MainActor.assumeIsolated { IncomeLiveStore() }}.singleton
     }
 }
