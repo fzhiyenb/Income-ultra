@@ -9,13 +9,13 @@ import Foundation
 
 struct HourlyInput {
     var hourlyWage: Double?
-    var hourspPerWeek: Double?
+    var hoursPerWeek: Double?
     var takeHomePercentage: Double?
     var overtime: Bool
 
     init(hourlyWage: Double? = nil, hoursperWeek: Double? = nil, takeHomePercentage: Double? = nil, overtime: Bool = true){
         self.hourlyWage = hourlyWage
-        self.hourspPerWeek = hoursperWeek
+        self.hoursPerWeek = hoursperWeek
         self.takeHomePercentage = takeHomePercentage
         self.overtime = overtime
     }

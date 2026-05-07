@@ -74,7 +74,7 @@ private extension IncomeView {
                   info: .init(name: "Hourly Wage (€)",
                               placeholder: "€ 36.50",
                               required: true))
-        InputView(value: $viewModel.hourlyInput.hourspPerWeek,
+        InputView(value: $viewModel.hourlyInput.hoursPerWeek,
                   info: .init(name: "Hours per Week",
                               placeholder: "40",
                               required: true))

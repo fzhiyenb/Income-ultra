@@ -29,7 +29,7 @@ private extension HomeTabView {
 
     var settingsTabItemView: some View {
         NavigationStack {
-            IncomeView()
+            SettingsView()
         }
         .tabItem {
             Image(systemName: "gearshape")

@@ -8,11 +8,46 @@
 import SwiftUI
 
 struct SettingsView: View {
+    @StateObject private var viewModel = SettingsViewModel()
+    @AppStorage(UserDefaultsKeys.isDarkModeEnabled) private var isDarkModeEnabled = true
+
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        ScrollView {
+            VStack(spacing: 16) {
+                introBoxView
+                customizationBoxView
+                applicationBoxView
+            }
+            .padding()
+        }
+        .infinityFrame()
+        .background(Color.appTheme.viewBackground)
     }
 }
 
+private extension SettingsView {
+    var introBoxView: some View {
+        IntroBoxView(data: .init(
+            title: viewModel.getAppName(),
+            sfSymbol: "info,circle",
+            imageName: "AppIconImage",
+            description: viewModel.getAppDescription()))
+    }
+
+    var customizationBoxView: some View {
+        BoxView(data: .init(
+            title: "Customization",
+            sfSymbol: "paintbrush")
+        ) {
+            Toggle("Dark Node", isOn: $isDarkModeEnabled)
+                .tint(.appTheme.accent)
+        }
+    }
+
+    var applicationBoxView: some View {
+        InfoBoxView(with: viewModel.agreementsData)
+    }
+}
 #Preview {
     SettingsView()
 }

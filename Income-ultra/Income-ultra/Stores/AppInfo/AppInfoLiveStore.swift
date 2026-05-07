@@ -31,7 +31,7 @@ struct AppInfoLiveStore {
 
 extension AppInfoLiveStore {
     struct Agreements {
-        let nivacyPolicyUrl: String = "https://www.fzhiyenb.com/projects/income-ultra"
+        let privacyPolicyUrl: String = "https://www.fzhiyenb.com/projects/income-ultra"
         let termsAndConditionsUrl: String = "https://www.fzhiyenb.com/projects/income-ultra"
         let copyrightPolicyUrl: String = "https://www.fzhiyenb.com/projects/income-ultra"
         let disclaimerUrl: String = "https://www.fzhiyenb.com/projects/income-ultra"}
